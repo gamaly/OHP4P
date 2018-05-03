@@ -1,0 +1,20 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %} {% block content %} {% for post in object_list %}
+<div class="container">
+    <div class="row">
+        <div class="col-8 mb-5">
+            <h2 class="mt-0">
+                <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
+            </h2>
+            <h6>Category: {{ post.category }}</h6>
+            {{ post.body }}
+        </div>
+
+        {% endfor %} {%for post in object_list %}
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+
+{% endfor %} {% endblock content %}

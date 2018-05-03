@@ -1,0 +1,14 @@
+<!-- templates/post_new.html -->
+{% extends 'base.html' %} {% block content %}
+<div class="container"> 
+    <h1>New post</h1>
+    <h2>Tab 1: Country Data</h2>
+    <p>This tab includes basic information about the platform and is to be completed by the NOHTA in advance of the P4P workshop.
+    </p>
+</div>
+<div class="container">
+    <form action="" method="post">{% csrf_token %} {{ form.as_p }}
+        <input type="submit" value="Save" />
+    </form>
+</div>
+{% endblock %}

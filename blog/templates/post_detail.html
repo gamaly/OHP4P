@@ -1,0 +1,28 @@
+<!-- templates/post_detail.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class ="ml-5 mr-5">
+        <div class="media">
+            <div class="media-body">
+              <h2 class="mt-0"><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h5>
+              <h6>Category: {{ post.category }}</h6>
+              <h6>{{ post.body }}</h6>
+              <h6>{{ post.country }}</h6>
+              <h6>{{ post.date }}</h6>
+              <h6>{{ post.facilitator_name }}</h6>
+              <h6>{{ post.nohta_name }}</h6>
+              <h6>{{ post.rohta_name }}</h6>
+              <h6>{{ post.participant_number }}</h6>
+              <h6>{{ post.sectors }}</h6>
+              <h6>{{ post.who_jee }}</h6>
+              <h6>{{ post.partners }}</h6>
+              <h6>{{ post.workshop }}</h6>
+            </div>
+    
+          </div>
+        </div>
+
+
+{% endblock content %}
