@@ -16,3 +16,6 @@ class BlogCreateView(CreateView):
     model = Post
     template_name = 'post_new.html'
     fields = '__all__'
+
+class AboutPageView(DetailView):
+    template_name = 'about.html'
